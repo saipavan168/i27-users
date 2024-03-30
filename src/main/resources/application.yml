@@ -27,3 +27,25 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 ---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    password: Gcp@2023
+    url: jdbc:mysql://34.173.175.129:3306/learnerCrownClothing?useSSL=FALSE
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8232
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://34.69.91.250:5761/eureka/
+  instance:
+    prefer-ip-address: true
