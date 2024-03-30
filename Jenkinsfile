@@ -144,11 +144,11 @@ pipeline{
                 }
              }
             }
-            stage('clean'){
+        /*    stage('clean'){
                 steps{
                     cleanWs()
                 }
-            }
+            }*/
      }
 }
 
