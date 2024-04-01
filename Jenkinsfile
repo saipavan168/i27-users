@@ -74,6 +74,7 @@ pipeline{
              }
              steps {
                 script{
+                    sh "whoami"
                     echo "*****************Entering into Dev*******************"
                     buildapp().call()
                     dockerpush().call()
